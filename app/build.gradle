@@ -8,13 +8,10 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "tk.zwander.patreonsupportersretrieval"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
