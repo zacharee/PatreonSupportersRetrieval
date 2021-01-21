@@ -1,6 +1,7 @@
 package tk.zwander.patreonsupportersretrieval.util
 
 import android.content.Context
+import android.util.Log
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.Dispatchers
@@ -35,6 +36,8 @@ class DataParser private constructor(private val context: Context) {
                     }
                 }
             } catch (e: Exception) {
+                Log.e("DataParser", e.message, e)
+
                 supportersString.clear()
 
                 context.assets.open("supporters.json").bufferedReader().useLines {
