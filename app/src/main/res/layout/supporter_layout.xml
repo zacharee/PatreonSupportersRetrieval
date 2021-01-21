@@ -9,7 +9,7 @@
         android:id="@+id/supporter_card"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:minHeight="?listPreferredItemHeight"
+        android:minHeight="?listPreferredItemHeightSmall"
         app:contentPadding="8dp">
 
         <TextView
