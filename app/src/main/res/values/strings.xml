@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PatreonSupportersRetrieval</string>
+
+    <string name="supporters">Supporters</string>
 </resources>
