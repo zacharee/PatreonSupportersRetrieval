@@ -11,6 +11,7 @@ class SupporterDialogPreference(context: Context, attrs: AttributeSet) : Prefere
     init {
         setTitle(R.string.supporters)
         setSummary(R.string.supporters_desc)
+        setIcon(R.drawable.ic_baseline_heart_24)
     }
 
     override fun onClick() {
