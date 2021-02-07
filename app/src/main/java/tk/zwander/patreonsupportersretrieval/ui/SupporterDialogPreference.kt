@@ -8,6 +8,11 @@ import tk.zwander.patreonsupportersretrieval.R
 import tk.zwander.patreonsupportersretrieval.view.SupporterView
 
 class SupporterDialogPreference(context: Context, attrs: AttributeSet) : Preference(context, attrs) {
+    init {
+        setTitle(R.string.supporters)
+        setSummary(R.string.supporters_desc)
+    }
+
     override fun onClick() {
         super.onClick()
 

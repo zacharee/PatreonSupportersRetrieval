@@ -2,4 +2,5 @@
     <string name="app_name">PatreonSupportersRetrieval</string>
 
     <string name="supporters">Supporters</string>
+    <string name="supporters_desc">These people (and more) help keep development of this app going.</string>
 </resources>
