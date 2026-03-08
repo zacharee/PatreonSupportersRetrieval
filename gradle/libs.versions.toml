@@ -1,0 +1,24 @@
+[versions]
+appcompat = "1.7.1"
+coreKtx = "1.17.0"
+gradle = "9.1.0"
+gson = "2.13.2"
+kotlinxCoroutines = "1.10.2"
+kotlin = "2.3.10"
+material = "1.13.0"
+preferenceKtx = "1.2.1"
+mavenPublish = "0.36.0"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preferenceKtx" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "gradle" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }

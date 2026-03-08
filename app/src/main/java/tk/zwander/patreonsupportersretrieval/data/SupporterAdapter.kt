@@ -11,7 +11,7 @@ import tk.zwander.patreonsupportersretrieval.databinding.SupporterLayoutBinding
 import tk.zwander.patreonsupportersretrieval.util.launchUrl
 
 class SupporterAdapter : RecyclerView.Adapter<SupporterAdapter.VH>() {
-    private val items = SortedList<SupporterInfo>(
+    private val items = SortedList(
         SupporterInfo::class.java,
         object : SortedListAdapterCallback<SupporterInfo>(this) {
             override fun compare(o1: SupporterInfo, o2: SupporterInfo): Int {
@@ -56,7 +56,7 @@ class SupporterAdapter : RecyclerView.Adapter<SupporterAdapter.VH>() {
         fun onBind(info: SupporterInfo) {
             binding.supporterName.text = info.name
             binding.supporterCard.setOnClickListener {
-                itemView.context.launchUrl(items[adapterPosition].link)
+                itemView.context.launchUrl(items[bindingAdapterPosition].link)
             }
         }
     }
